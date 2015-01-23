@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E51D98C1A72CFEE0035C305 /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51D9851A72CFEE0035C305 /* TAAbstractDotView.m */; };
+		5E51D98D1A72CFEE0035C305 /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51D9871A72CFEE0035C305 /* TAAnimatedDotView.m */; };
+		5E51D98E1A72CFEE0035C305 /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51D9891A72CFEE0035C305 /* TADotView.m */; };
+		5E51D98F1A72CFEE0035C305 /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51D98B1A72CFEE0035C305 /* TAPageControl.m */; };
+		5E51D9971A72D00A0035C305 /* dotActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9911A72D00A0035C305 /* dotActive.png */; };
+		5E51D9981A72D00A0035C305 /* dotActive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9921A72D00A0035C305 /* dotActive@2x.png */; };
+		5E51D9991A72D00A0035C305 /* dotActive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9931A72D00A0035C305 /* dotActive@3x.png */; };
+		5E51D99A1A72D00A0035C305 /* dotInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9941A72D00A0035C305 /* dotInactive.png */; };
+		5E51D99B1A72D00A0035C305 /* dotInactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9951A72D00A0035C305 /* dotInactive@2x.png */; };
+		5E51D99C1A72D00A0035C305 /* dotInactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E51D9961A72D00A0035C305 /* dotInactive@3x.png */; };
+		5E51D99F1A72E5960035C305 /* TAExampleDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51D99E1A72E5960035C305 /* TAExampleDotView.m */; };
+		5E619A5A1A7042AF00288DF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E619A591A7042AF00288DF1 /* main.m */; };
+		5E619A5D1A7042AF00288DF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E619A5C1A7042AF00288DF1 /* AppDelegate.m */; };
+		5E619A601A7042AF00288DF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E619A5F1A7042AF00288DF1 /* ViewController.m */; };
+		5E619A631A7042AF00288DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E619A611A7042AF00288DF1 /* Main.storyboard */; };
+		5E619A651A7042AF00288DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E619A641A7042AF00288DF1 /* Images.xcassets */; };
+		5E619A681A7042AF00288DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E619A661A7042AF00288DF1 /* LaunchScreen.xib */; };
+		5E619A741A7042AF00288DF1 /* TAPageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E619A731A7042AF00288DF1 /* TAPageControlTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E619A6E1A7042AF00288DF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E619A4C1A7042AF00288DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E619A531A7042AF00288DF1;
+			remoteInfo = TAPageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E51D9841A72CFEE0035C305 /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		5E51D9851A72CFEE0035C305 /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		5E51D9861A72CFEE0035C305 /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		5E51D9871A72CFEE0035C305 /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		5E51D9881A72CFEE0035C305 /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		5E51D9891A72CFEE0035C305 /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		5E51D98A1A72CFEE0035C305 /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		5E51D98B1A72CFEE0035C305 /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		5E51D9911A72D00A0035C305 /* dotActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotActive.png; sourceTree = "<group>"; };
+		5E51D9921A72D00A0035C305 /* dotActive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotActive@2x.png"; sourceTree = "<group>"; };
+		5E51D9931A72D00A0035C305 /* dotActive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotActive@3x.png"; sourceTree = "<group>"; };
+		5E51D9941A72D00A0035C305 /* dotInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dotInactive.png; sourceTree = "<group>"; };
+		5E51D9951A72D00A0035C305 /* dotInactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotInactive@2x.png"; sourceTree = "<group>"; };
+		5E51D9961A72D00A0035C305 /* dotInactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dotInactive@3x.png"; sourceTree = "<group>"; };
+		5E51D99D1A72E5960035C305 /* TAExampleDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAExampleDotView.h; sourceTree = "<group>"; };
+		5E51D99E1A72E5960035C305 /* TAExampleDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAExampleDotView.m; sourceTree = "<group>"; };
+		5E619A541A7042AF00288DF1 /* TAPageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAPageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E619A581A7042AF00288DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E619A591A7042AF00288DF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E619A5B1A7042AF00288DF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E619A5C1A7042AF00288DF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E619A5E1A7042AF00288DF1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E619A5F1A7042AF00288DF1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E619A621A7042AF00288DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E619A641A7042AF00288DF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E619A671A7042AF00288DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5E619A6D1A7042AF00288DF1 /* TAPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E619A721A7042AF00288DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E619A731A7042AF00288DF1 /* TAPageControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPageControlTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E619A511A7042AF00288DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E619A6A1A7042AF00288DF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E51D9831A72CFEE0035C305 /* TAPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				5E51D9841A72CFEE0035C305 /* TAAbstractDotView.h */,
+				5E51D9851A72CFEE0035C305 /* TAAbstractDotView.m */,
+				5E51D9861A72CFEE0035C305 /* TAAnimatedDotView.h */,
+				5E51D9871A72CFEE0035C305 /* TAAnimatedDotView.m */,
+				5E51D9881A72CFEE0035C305 /* TADotView.h */,
+				5E51D9891A72CFEE0035C305 /* TADotView.m */,
+				5E51D98A1A72CFEE0035C305 /* TAPageControl.h */,
+				5E51D98B1A72CFEE0035C305 /* TAPageControl.m */,
+			);
+			name = TAPageControl;
+			path = ../../TAPageControl;
+			sourceTree = "<group>";
+		};
+		5E51D9901A72D00A0035C305 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E51D9911A72D00A0035C305 /* dotActive.png */,
+				5E51D9921A72D00A0035C305 /* dotActive@2x.png */,
+				5E51D9931A72D00A0035C305 /* dotActive@3x.png */,
+				5E51D9941A72D00A0035C305 /* dotInactive.png */,
+				5E51D9951A72D00A0035C305 /* dotInactive@2x.png */,
+				5E51D9961A72D00A0035C305 /* dotInactive@3x.png */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		5E619A4B1A7042AF00288DF1 = {
+			isa = PBXGroup;
+			children = (
+				5E619A561A7042AF00288DF1 /* TAPageControl */,
+				5E619A701A7042AF00288DF1 /* TAPageControlTests */,
+				5E619A551A7042AF00288DF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E619A551A7042AF00288DF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E619A541A7042AF00288DF1 /* TAPageControl.app */,
+				5E619A6D1A7042AF00288DF1 /* TAPageControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E619A561A7042AF00288DF1 /* TAPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				5E51D9901A72D00A0035C305 /* Resources */,
+				5E51D9831A72CFEE0035C305 /* TAPageControl */,
+				5E619A5B1A7042AF00288DF1 /* AppDelegate.h */,
+				5E619A5C1A7042AF00288DF1 /* AppDelegate.m */,
+				5E619A5E1A7042AF00288DF1 /* ViewController.h */,
+				5E619A5F1A7042AF00288DF1 /* ViewController.m */,
+				5E51D99D1A72E5960035C305 /* TAExampleDotView.h */,
+				5E51D99E1A72E5960035C305 /* TAExampleDotView.m */,
+				5E619A611A7042AF00288DF1 /* Main.storyboard */,
+				5E619A641A7042AF00288DF1 /* Images.xcassets */,
+				5E619A661A7042AF00288DF1 /* LaunchScreen.xib */,
+				5E619A571A7042AF00288DF1 /* Supporting Files */,
+			);
+			path = TAPageControl;
+			sourceTree = "<group>";
+		};
+		5E619A571A7042AF00288DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E619A581A7042AF00288DF1 /* Info.plist */,
+				5E619A591A7042AF00288DF1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E619A701A7042AF00288DF1 /* TAPageControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E619A731A7042AF00288DF1 /* TAPageControlTests.m */,
+				5E619A711A7042AF00288DF1 /* Supporting Files */,
+			);
+			path = TAPageControlTests;
+			sourceTree = "<group>";
+		};
+		5E619A711A7042AF00288DF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E619A721A7042AF00288DF1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E619A531A7042AF00288DF1 /* TAPageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E619A771A7042AF00288DF1 /* Build configuration list for PBXNativeTarget "TAPageControl" */;
+			buildPhases = (
+				5E619A501A7042AF00288DF1 /* Sources */,
+				5E619A511A7042AF00288DF1 /* Frameworks */,
+				5E619A521A7042AF00288DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TAPageControl;
+			productName = TAPageControl;
+			productReference = 5E619A541A7042AF00288DF1 /* TAPageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E619A6C1A7042AF00288DF1 /* TAPageControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E619A7A1A7042AF00288DF1 /* Build configuration list for PBXNativeTarget "TAPageControlTests" */;
+			buildPhases = (
+				5E619A691A7042AF00288DF1 /* Sources */,
+				5E619A6A1A7042AF00288DF1 /* Frameworks */,
+				5E619A6B1A7042AF00288DF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E619A6F1A7042AF00288DF1 /* PBXTargetDependency */,
+			);
+			name = TAPageControlTests;
+			productName = TAPageControlTests;
+			productReference = 5E619A6D1A7042AF00288DF1 /* TAPageControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E619A4C1A7042AF00288DF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tanguy Aladenise";
+				TargetAttributes = {
+					5E619A531A7042AF00288DF1 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = SNVBX3TLMS;
+					};
+					5E619A6C1A7042AF00288DF1 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5E619A531A7042AF00288DF1;
+					};
+				};
+			};
+			buildConfigurationList = 5E619A4F1A7042AF00288DF1 /* Build configuration list for PBXProject "TAPageControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E619A4B1A7042AF00288DF1;
+			productRefGroup = 5E619A551A7042AF00288DF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E619A531A7042AF00288DF1 /* TAPageControl */,
+				5E619A6C1A7042AF00288DF1 /* TAPageControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E619A521A7042AF00288DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E619A631A7042AF00288DF1 /* Main.storyboard in Resources */,
+				5E51D99B1A72D00A0035C305 /* dotInactive@2x.png in Resources */,
+				5E51D9981A72D00A0035C305 /* dotActive@2x.png in Resources */,
+				5E51D99C1A72D00A0035C305 /* dotInactive@3x.png in Resources */,
+				5E619A681A7042AF00288DF1 /* LaunchScreen.xib in Resources */,
+				5E51D99A1A72D00A0035C305 /* dotInactive.png in Resources */,
+				5E51D9991A72D00A0035C305 /* dotActive@3x.png in Resources */,
+				5E619A651A7042AF00288DF1 /* Images.xcassets in Resources */,
+				5E51D9971A72D00A0035C305 /* dotActive.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E619A6B1A7042AF00288DF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E619A501A7042AF00288DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E51D99F1A72E5960035C305 /* TAExampleDotView.m in Sources */,
+				5E51D98F1A72CFEE0035C305 /* TAPageControl.m in Sources */,
+				5E619A601A7042AF00288DF1 /* ViewController.m in Sources */,
+				5E51D98E1A72CFEE0035C305 /* TADotView.m in Sources */,
+				5E51D98C1A72CFEE0035C305 /* TAAbstractDotView.m in Sources */,
+				5E619A5D1A7042AF00288DF1 /* AppDelegate.m in Sources */,
+				5E51D98D1A72CFEE0035C305 /* TAAnimatedDotView.m in Sources */,
+				5E619A5A1A7042AF00288DF1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E619A691A7042AF00288DF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E619A741A7042AF00288DF1 /* TAPageControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E619A6F1A7042AF00288DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E619A531A7042AF00288DF1 /* TAPageControl */;
+			targetProxy = 5E619A6E1A7042AF00288DF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E619A611A7042AF00288DF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E619A621A7042AF00288DF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E619A661A7042AF00288DF1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E619A671A7042AF00288DF1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E619A751A7042AF00288DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E619A761A7042AF00288DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E619A781A7042AF00288DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TAPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E619A791A7042AF00288DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TAPageControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5E619A7B1A7042AF00288DF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TAPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAPageControl.app/TAPageControl";
+			};
+			name = Debug;
+		};
+		5E619A7C1A7042AF00288DF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TAPageControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TAPageControl.app/TAPageControl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E619A4F1A7042AF00288DF1 /* Build configuration list for PBXProject "TAPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E619A751A7042AF00288DF1 /* Debug */,
+				5E619A761A7042AF00288DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E619A771A7042AF00288DF1 /* Build configuration list for PBXNativeTarget "TAPageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E619A781A7042AF00288DF1 /* Debug */,
+				5E619A791A7042AF00288DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E619A7A1A7042AF00288DF1 /* Build configuration list for PBXNativeTarget "TAPageControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E619A7B1A7042AF00288DF1 /* Debug */,
+				5E619A7C1A7042AF00288DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E619A4C1A7042AF00288DF1 /* Project object */;
+}
