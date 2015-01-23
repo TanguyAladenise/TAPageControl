@@ -7,6 +7,7 @@
 //
 
 #import "TAPageControl.h"
+#import "TAAbstractDotView.h"
 #import "TAAnimatedDotView.h"
 #import "TADotView.h"
 

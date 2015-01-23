@@ -11,12 +11,21 @@
 @interface TAPageControl : UIControl
 
 
+/**
+ *  The Class of your custom UIView, make sure to respect the TAAbstractDotView class.
+ */
 @property (nonatomic) Class dotViewClass;
 
 
+/**
+ *  UIImage to represent a dot.
+ */
 @property (nonatomic) UIImage *dotImage;
 
 
+/**
+ *  UIImage to represent current page dot.
+ */
 @property (nonatomic) UIImage *currentDotImage;
 
 
