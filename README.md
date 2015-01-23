@@ -62,7 +62,7 @@ If you are looking for a page control I guess it's because the default one provi
 By setting both properties with your images, the control will take care of displaying the correct version depending on the current page.
 
 
-But what if you need more control? Well, will a <em>UIView<em> be enough for you?
+But what if you need more control? Well, will a <em>UIView</em> be enough for you?
 By using :
 ``` objective-c
 /**
