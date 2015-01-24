@@ -1,8 +1,10 @@
 About TAPageControl
 ===
-
 <strong>TAPageControl</strong> basically is a more powerfull UIPageControl.
 It offers you greater flexibility and customization.
+
+![demo](https://dl.dropboxusercontent.com/u/20482310/TAPageControl.gif)
+
 
 How it works
 ===
