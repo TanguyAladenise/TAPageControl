@@ -93,7 +93,7 @@ Take a look at the sample project to see how great and simple it is by yourself 
 License
 ===
 
-EMString is available under the MIT license. See the LICENSE file for more info.
+TAPageControl is available under the MIT license. See the LICENSE file for more info.
 
 More
 ===
