@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B23" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -16,17 +16,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="bvZ-xg-4EE">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="bvZ-xg-4EE">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </scrollView>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="J9W-2d-zL6">
-                                        <rect key="frame" x="141" y="126" width="39" height="37"/>
+                                    <view contentMode="scaleToFill" id="mZI-BK-ngf" customClass="TAPageControl">
+                                        <rect key="frame" x="107" y="126" width="105" height="30"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </pageControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Apple PageControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UJT-BN-nKD">
-                                        <rect key="frame" x="8" y="166" width="304" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default TAPageControl from storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UJT-BN-nKD">
+                                        <rect key="frame" x="8" y="161" width="304" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -37,13 +37,13 @@
                                 <rect key="frame" x="0.0" y="189" width="320" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="a1j-gA-xVb">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="a1j-gA-xVb">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </scrollView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom TAPageControl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GoQ-Ae-Vwr">
-                                        <rect key="frame" x="8" y="166" width="304" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom TAPageControl with animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GoQ-Ae-Vwr">
+                                        <rect key="frame" x="8" y="161" width="304" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -54,17 +54,13 @@
                                 <rect key="frame" x="0.0" y="378" width="320" height="190"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="TaP-ul-pF3">
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="TaP-ul-pF3">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="161"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                     </scrollView>
-                                    <view contentMode="scaleToFill" id="mZI-BK-ngf" customClass="TAPageControl">
-                                        <rect key="frame" x="108" y="126" width="105" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom TAPageControl from storyboard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sUo-dB-M6r">
-                                        <rect key="frame" x="8" y="166" width="304" height="19"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom TAPageControl with images" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sUo-dB-M6r">
+                                        <rect key="frame" x="8" y="161" width="304" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -75,12 +71,12 @@
                         <color key="backgroundColor" red="0.82799999999999996" green="0.0" blue="0.28299999999999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="customPageControlWrapper" destination="gow-6K-rl8" id="3sc-yc-WAX"/>
-                        <outlet property="customScrollView" destination="a1j-gA-xVb" id="iG6-sd-a5q"/>
                         <outlet property="customStoryboardPageControl" destination="mZI-BK-ngf" id="rWR-VK-QjA"/>
-                        <outlet property="defaultScrollView" destination="bvZ-xg-4EE" id="Sgq-2h-OSj"/>
-                        <outlet property="pageControl" destination="J9W-2d-zL6" id="4yD-ta-Un5"/>
-                        <outlet property="storyboardCustomScrollView" destination="TaP-ul-pF3" id="UOg-HV-od3"/>
+                        <outlet property="scrollView1" destination="bvZ-xg-4EE" id="tWf-dI-dEW"/>
+                        <outlet property="scrollView2" destination="a1j-gA-xVb" id="ci1-7P-tQO"/>
+                        <outlet property="scrollView3" destination="TaP-ul-pF3" id="SJk-id-KtF"/>
+                        <outlet property="wrapper2" destination="gow-6K-rl8" id="qOY-Cv-ArJ"/>
+                        <outlet property="wrapper3" destination="LZ6-2y-mXc" id="4Oa-eV-bKD"/>
                         <outletCollection property="scrollViews" destination="bvZ-xg-4EE" id="UGw-ew-8Qv"/>
                         <outletCollection property="scrollViews" destination="a1j-gA-xVb" id="cHK-g5-r7E"/>
                         <outletCollection property="scrollViews" destination="TaP-ul-pF3" id="YM5-Hd-Rzl"/>

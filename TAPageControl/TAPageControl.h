@@ -12,6 +12,10 @@
 
 
 /**
+ * Dot view customization properties
+ */
+
+/**
  *  The Class of your custom UIView, make sure to respect the TAAbstractDotView class.
  */
 @property (nonatomic) Class dotViewClass;
@@ -29,10 +33,21 @@
 @property (nonatomic) UIImage *currentDotImage;
 
 
+/**
+ *  Dot size for dot views. Default is 8 by 8.
+ */
 @property (nonatomic) CGSize dotSize;
 
 
+/**
+ *  Spacing between two dot views. Default is 8.
+ */
 @property (nonatomic) NSInteger spacingBetweenDots;
+
+
+/**
+ * Page control setup properties
+ */
 
 
 /**
@@ -57,6 +72,7 @@
  *  Let the control know if should grow bigger by keeping center, or just get longer (right side expanding). By default YES.
  */
 @property (nonatomic) BOOL shouldResizeFromCenter;
+
 
 
 /**

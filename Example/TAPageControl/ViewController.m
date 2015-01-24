@@ -13,21 +13,23 @@
 #import "TAPageControl.h"
 
 
-static CGFloat const kNumberOfPages = 5;
-
 
 @interface ViewController () <UIScrollViewDelegate>
 
-
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
-@property (strong, nonatomic) TAPageControl *customPageControl;
 @property (weak, nonatomic) IBOutlet TAPageControl *customStoryboardPageControl;
+@property (strong, nonatomic) TAPageControl *customPageControl2;
+@property (strong, nonatomic) TAPageControl *customPageControl3;
+
 @property (strong, nonatomic) IBOutletCollection(UIScrollView) NSArray *scrollViews;
 
-@property (weak, nonatomic) IBOutlet UIScrollView *defaultScrollView;
-@property (weak, nonatomic) IBOutlet UIScrollView *customScrollView;
-@property (weak, nonatomic) IBOutlet UIScrollView *storyboardCustomScrollView;
-@property (weak, nonatomic) IBOutlet UIView *customPageControlWrapper;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView1;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView2;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView3;
+
+@property (weak, nonatomic) IBOutlet UIView *wrapper2;
+@property (weak, nonatomic) IBOutlet UIView *wrapper3;
+
+@property (strong, nonatomic) NSArray *imagesData;
 
 
 @end
@@ -42,26 +44,35 @@ static CGFloat const kNumberOfPages = 5;
 {
     [super viewDidLoad];
     
+    self.imagesData = @[@"image1.jpg", @"image2.jpg", @"image3.jpg", @"image4.jpg", @"image5.jpg", @"image6.jpg"];
+
+    [self setupScrollViewImages];
+    
     for (UIScrollView *scrollView in self.scrollViews) {
         scrollView.delegate = self;
     }
     
-    // TO DO , add img for scrollviews
-    
-    // Apple default
-    self.pageControl.numberOfPages = kNumberOfPages;
-    
     // TAPageControl from storyboard
-    self.customStoryboardPageControl.numberOfPages = kNumberOfPages;
-
+    self.customStoryboardPageControl.numberOfPages = self.imagesData.count;
+    
+    
     // Progammatically init a TAPageControl with a custom dot view.
-    self.customPageControl               = [[TAPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.customScrollView.frame) - 40, CGRectGetWidth(self.customScrollView.frame), 40)];
-    self.customPageControl.numberOfPages = kNumberOfPages;
+    self.customPageControl2               = [[TAPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.scrollView2.frame) - 40, CGRectGetWidth(self.scrollView2.frame), 40)];
+    self.customPageControl2.numberOfPages = self.imagesData.count;
     // Custom dot view
-    self.customPageControl.dotViewClass  = [TAExampleDotView class];
-    self.customPageControl.dotSize       = CGSizeMake(10, 10);
+    self.customPageControl2.dotViewClass  = [TAExampleDotView class];
+    self.customPageControl2.dotSize       = CGSizeMake(12, 12);
 
-    [self.customPageControlWrapper addSubview:self.customPageControl];
+    [self.wrapper2 addSubview:self.customPageControl2];
+    
+    
+    self.customPageControl3                 = [[TAPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.scrollView3.frame) - 40, CGRectGetWidth(self.scrollView3.frame), 40)];
+    self.customPageControl3.numberOfPages   = self.imagesData.count;
+    // Custom dot view with image
+    self.customPageControl3.dotImage        = [UIImage imageNamed:@"dotInactive"];
+    self.customPageControl3.currentDotImage = [UIImage imageNamed:@"dotActive"];
+    
+    [self.wrapper3 addSubview:self.customPageControl3];
 }
 
 
@@ -70,7 +81,7 @@ static CGFloat const kNumberOfPages = 5;
     [super viewDidLayoutSubviews];
 
     for (UIScrollView *scrollView in self.scrollViews) {
-        scrollView.contentSize = CGSizeMake(CGRectGetWidth(scrollView.frame) * kNumberOfPages, CGRectGetHeight(scrollView.frame));
+        scrollView.contentSize = CGSizeMake(CGRectGetWidth(scrollView.frame) * self.imagesData.count, CGRectGetHeight(scrollView.frame));
     }
 }
 
@@ -83,12 +94,29 @@ static CGFloat const kNumberOfPages = 5;
 {
     NSInteger pageIndex = scrollView.contentOffset.x / CGRectGetWidth(scrollView.frame);
     
-    if (scrollView == self.defaultScrollView) {
-        self.pageControl.currentPage = pageIndex;
-    } else if (scrollView == self.customScrollView) {
-        self.customPageControl.currentPage = pageIndex;
+    if (scrollView == self.scrollView3) {
+        self.customPageControl3.currentPage = pageIndex;
+    } else if (scrollView == self.scrollView2) {
+        self.customPageControl2.currentPage = pageIndex;
     } else {
         self.customStoryboardPageControl.currentPage = pageIndex;
+    }
+}
+
+
+#pragma mark - Utils
+
+
+- (void)setupScrollViewImages
+{
+    for (UIScrollView *scrollView in self.scrollViews) {
+        
+        [self.imagesData enumerateObjectsUsingBlock:^(NSString *imageName, NSUInteger idx, BOOL *stop) {
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(scrollView.frame) * idx, 0, CGRectGetWidth(scrollView.frame), CGRectGetHeight(scrollView.frame))];
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            imageView.image = [UIImage imageNamed:imageName];
+            [scrollView addSubview:imageView];
+        }];
     }
 }
 

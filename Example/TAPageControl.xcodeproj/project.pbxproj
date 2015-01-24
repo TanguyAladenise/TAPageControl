@@ -25,6 +25,12 @@
 		5E619A651A7042AF00288DF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E619A641A7042AF00288DF1 /* Images.xcassets */; };
 		5E619A681A7042AF00288DF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E619A661A7042AF00288DF1 /* LaunchScreen.xib */; };
 		5E619A741A7042AF00288DF1 /* TAPageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E619A731A7042AF00288DF1 /* TAPageControlTests.m */; };
+		5EE840171A734149000CB3CA /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840111A734149000CB3CA /* image1.jpg */; };
+		5EE840181A734149000CB3CA /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840121A734149000CB3CA /* image2.jpg */; };
+		5EE840191A734149000CB3CA /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840131A734149000CB3CA /* image3.jpg */; };
+		5EE8401A1A734149000CB3CA /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840141A734149000CB3CA /* image4.jpg */; };
+		5EE8401B1A734149000CB3CA /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840151A734149000CB3CA /* image5.jpg */; };
+		5EE8401C1A734149000CB3CA /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EE840161A734149000CB3CA /* image6.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		5E619A6D1A7042AF00288DF1 /* TAPageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAPageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E619A721A7042AF00288DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E619A731A7042AF00288DF1 /* TAPageControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAPageControlTests.m; sourceTree = "<group>"; };
+		5EE840111A734149000CB3CA /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		5EE840121A734149000CB3CA /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		5EE840131A734149000CB3CA /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		5EE840141A734149000CB3CA /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		5EE840151A734149000CB3CA /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		5EE840161A734149000CB3CA /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,12 @@
 		5E51D9901A72D00A0035C305 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5EE840111A734149000CB3CA /* image1.jpg */,
+				5EE840121A734149000CB3CA /* image2.jpg */,
+				5EE840131A734149000CB3CA /* image3.jpg */,
+				5EE840141A734149000CB3CA /* image4.jpg */,
+				5EE840151A734149000CB3CA /* image5.jpg */,
+				5EE840161A734149000CB3CA /* image6.jpg */,
 				5E51D9911A72D00A0035C305 /* dotActive.png */,
 				5E51D9921A72D00A0035C305 /* dotActive@2x.png */,
 				5E51D9931A72D00A0035C305 /* dotActive@3x.png */,
@@ -260,10 +278,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE840181A734149000CB3CA /* image2.jpg in Resources */,
 				5E619A631A7042AF00288DF1 /* Main.storyboard in Resources */,
+				5EE840171A734149000CB3CA /* image1.jpg in Resources */,
+				5EE8401B1A734149000CB3CA /* image5.jpg in Resources */,
+				5EE840191A734149000CB3CA /* image3.jpg in Resources */,
 				5E51D99B1A72D00A0035C305 /* dotInactive@2x.png in Resources */,
+				5EE8401C1A734149000CB3CA /* image6.jpg in Resources */,
 				5E51D9981A72D00A0035C305 /* dotActive@2x.png in Resources */,
 				5E51D99C1A72D00A0035C305 /* dotInactive@3x.png in Resources */,
+				5EE8401A1A734149000CB3CA /* image4.jpg in Resources */,
 				5E619A681A7042AF00288DF1 /* LaunchScreen.xib in Resources */,
 				5E51D99A1A72D00A0035C305 /* dotInactive.png in Resources */,
 				5E51D9991A72D00A0035C305 /* dotActive@3x.png in Resources */,
