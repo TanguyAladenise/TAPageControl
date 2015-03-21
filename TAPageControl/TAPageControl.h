@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TAPageControlDelegate;
+
+
 @interface TAPageControl : UIControl
 
 
@@ -51,6 +54,12 @@
 
 
 /**
+ * Delegate for TAPageControl
+ */
+@property(nonatomic,assign) id<TAPageControlDelegate> delegate;
+
+
+/**
  *  Number of pages for control. Default is 0.
  */
 @property (nonatomic) NSInteger numberOfPages;
@@ -74,7 +83,6 @@
 @property (nonatomic) BOOL shouldResizeFromCenter;
 
 
-
 /**
  *  Return the minimum size required to display control properly for the given page count.
  *
@@ -84,5 +92,13 @@
  */
 - (CGSize)sizeForNumberOfPages:(NSInteger)pageCount;
 
+
+@end
+
+
+@protocol TAPageControlDelegate <NSObject>
+
+@optional
+- (void)TAPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
 
 @end

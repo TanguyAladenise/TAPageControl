@@ -112,7 +112,9 @@ static CGSize const kDefaultDotSize = {8, 8};
     UITouch *touch = [touches anyObject];
     if (touch.view != self) {
         NSInteger index = [self.dots indexOfObject:touch.view];
-        self.currentPage = index;
+        if ([self.delegate respondsToSelector:@selector(TAPageControl:didSelectPageAtIndex:)]) {
+            [self.delegate TAPageControl:self didSelectPageAtIndex:index];
+        }
     }
 }
 

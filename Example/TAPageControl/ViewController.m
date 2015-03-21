@@ -14,7 +14,7 @@
 
 
 
-@interface ViewController () <UIScrollViewDelegate>
+@interface ViewController () <UIScrollViewDelegate, TAPageControlDelegate>
 
 @property (weak, nonatomic) IBOutlet TAPageControl *customStoryboardPageControl;
 @property (strong, nonatomic) TAPageControl *customPageControl2;
@@ -33,6 +33,7 @@
 
 
 @end
+
 
 @implementation ViewController
 
@@ -58,6 +59,8 @@
     
     // Progammatically init a TAPageControl with a custom dot view.
     self.customPageControl2               = [[TAPageControl alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.scrollView2.frame) - 40, CGRectGetWidth(self.scrollView2.frame), 40)];
+    // Example for touch bullet event
+    self.customPageControl2.delegate      = self;
     self.customPageControl2.numberOfPages = self.imagesData.count;
     // Custom dot view
     self.customPageControl2.dotViewClass  = [TAExampleDotView class];
@@ -104,13 +107,20 @@
 }
 
 
+// Example of use of delegate for second scroll view to respond to bullet touch event
+- (void)TAPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index
+{
+    NSLog(@"Bullet index %ld", (long)index);
+    [self.scrollView2 scrollRectToVisible:CGRectMake(CGRectGetWidth(self.scrollView2.frame) * index, 0, CGRectGetWidth(self.scrollView2.frame), CGRectGetHeight(self.scrollView2.frame)) animated:YES];
+}
+
+
 #pragma mark - Utils
 
 
 - (void)setupScrollViewImages
 {
     for (UIScrollView *scrollView in self.scrollViews) {
-        
         [self.imagesData enumerateObjectsUsingBlock:^(NSString *imageName, NSUInteger idx, BOOL *stop) {
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(scrollView.frame) * idx, 0, CGRectGetWidth(scrollView.frame), CGRectGetHeight(scrollView.frame))];
             imageView.contentMode = UIViewContentModeScaleAspectFill;
