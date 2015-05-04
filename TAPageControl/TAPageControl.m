@@ -37,6 +37,11 @@ static BOOL const kDefaultShouldResizeFromCenter = YES;
 static NSInteger const kDefaultSpacingBetweenDots = 8;
 
 /**
+ *  Default setting for progressive
+ */
+static BOOL const kDefaultIsProgressive = NO;
+
+/**
  *  Default dot size
  */
 static CGSize const kDefaultDotSize = {8, 8};
@@ -102,6 +107,7 @@ static CGSize const kDefaultDotSize = {8, 8};
     self.currentPage            = kDefaultCurrentPage;
     self.hidesForSinglePage     = kDefaultHideForSinglePage;
     self.shouldResizeFromCenter = kDefaultShouldResizeFromCenter;
+    self.progressive            = kDefaultIsProgressive;
 }
 
 
@@ -302,7 +308,9 @@ static CGSize const kDefaultDotSize = {8, 8};
     }
     
     // Pre set
-    [self changeActivity:NO atIndex:_currentPage];
+    if (!self.progressive || currentPage < _currentPage) {
+        [self changeActivity:NO atIndex:_currentPage];
+    }
     _currentPage = currentPage;
     // Post set
     [self changeActivity:YES atIndex:_currentPage];
