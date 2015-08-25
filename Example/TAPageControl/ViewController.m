@@ -55,6 +55,7 @@
     
     // TAPageControl from storyboard
     self.customStoryboardPageControl.numberOfPages = self.imagesData.count;
+    self.customStoryboardPageControl.progressive = YES;
     
     
     // Progammatically init a TAPageControl with a custom dot view.

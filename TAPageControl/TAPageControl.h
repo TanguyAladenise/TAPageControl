@@ -84,6 +84,12 @@
 
 
 /**
+ *  Fill in dots with index equal or less than current page's index 
+ */
+@property (nonatomic, getter=isProgressive) BOOL progressive;
+
+
+/**
  *  Return the minimum size required to display control properly for the given page count.
  *
  *  @param pageCount Number of dots that will require display
