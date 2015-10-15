@@ -100,6 +100,6 @@
 @protocol TAPageControlDelegate <NSObject>
 
 @optional
-- (void)TAPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
+- (void)taPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
 
 @end
