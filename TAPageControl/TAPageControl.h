@@ -10,7 +10,6 @@
 
 @protocol TAPageControlDelegate;
 
-
 @interface TAPageControl : UIControl
 
 
@@ -39,13 +38,15 @@
 /**
  *  Dot size for dot views. Default is 8 by 8.
  */
-@property (nonatomic) CGSize dotSize;
+
+@property (nonatomic) IBInspectable CGSize dotSize;
 
 
 /**
  *  Spacing between two dot views. Default is 8.
  */
-@property (nonatomic) NSInteger spacingBetweenDots;
+
+@property (nonatomic) IBInspectable NSInteger spacingBetweenDots;
 
 
 /**
@@ -62,25 +63,25 @@
 /**
  *  Number of pages for control. Default is 0.
  */
-@property (nonatomic) NSInteger numberOfPages;
+@property (nonatomic) IBInspectable NSInteger numberOfPages;
 
 
 /**
  *  Current page on which control is active. Default is 0.
  */
-@property (nonatomic) NSInteger currentPage;
+@property (nonatomic) IBInspectable NSInteger currentPage;
 
 
 /**
  *  Hide the control if there is only one page. Default is NO.
  */
-@property (nonatomic) BOOL hidesForSinglePage;
+@property (nonatomic) IBInspectable BOOL hidesForSinglePage;
 
 
 /**
  *  Let the control know if should grow bigger by keeping center, or just get longer (right side expanding). By default YES.
  */
-@property (nonatomic) BOOL shouldResizeFromCenter;
+@property (nonatomic) IBInspectable BOOL shouldResizeFromCenter;
 
 
 /**

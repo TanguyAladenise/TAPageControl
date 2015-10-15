@@ -102,6 +102,7 @@ static CGSize const kDefaultDotSize = {8, 8};
     self.currentPage            = kDefaultCurrentPage;
     self.hidesForSinglePage     = kDefaultHideForSinglePage;
     self.shouldResizeFromCenter = kDefaultShouldResizeFromCenter;
+    _dotSize = kDefaultDotSize;
 }
 
 
@@ -311,27 +312,44 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 - (void)setDotImage:(UIImage *)dotImage
 {
-    _dotImage = dotImage;
-    [self resetDotViews];
-    self.dotViewClass = nil;
+    if (_dotImage != dotImage)
+    {
+        _dotImage = dotImage;
+        self.dotSize = _dotImage.size;
+        [self resetDotViews];
+        self.dotViewClass = nil;
+    }
 }
 
 
 - (void)setCurrentDotImage:(UIImage *)currentDotimage
 {
-    _currentDotImage = currentDotimage;
-    [self resetDotViews];
-    self.dotViewClass = nil;
+    if (_currentDotImage != currentDotimage)
+    {
+        _currentDotImage = currentDotimage;
+        [self resetDotViews];
+        self.dotViewClass = nil;
+    }
 }
 
 
 - (void)setDotViewClass:(Class)dotViewClass
 {
-    _dotViewClass = dotViewClass;
-    self.dotSize = CGSizeZero;
-    [self resetDotViews];
+    if (_dotViewClass != dotViewClass)
+    {
+        _dotViewClass = dotViewClass;
+        [self resetDotViews];
+    }
 }
 
+- (void)setDotSize:(CGSize)dotSize
+{
+    if (_dotSize.height != dotSize.height || _dotSize.width != dotSize.width)
+    {
+        _dotSize = dotSize;
+        [self resetDotViews];
+    }
+}
 
 #pragma mark - Getters
 
@@ -343,20 +361,6 @@ static CGSize const kDefaultDotSize = {8, 8};
     }
     
     return _dots;
-}
-
-
-- (CGSize)dotSize
-{
-    // Dot size logic depending on the source of the dot view
-    if (self.dotImage && CGSizeEqualToSize(_dotSize, CGSizeZero)) {
-        _dotSize = self.dotImage.size;
-    } else if (self.dotViewClass && CGSizeEqualToSize(_dotSize, CGSizeZero)) {
-        _dotSize = kDefaultDotSize;
-        return _dotSize;
-    }
-    
-    return _dotSize;
 }
 
 @end
